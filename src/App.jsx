@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import './App.css'
 
 function App() {
@@ -10,27 +10,25 @@ function App() {
     <div className="App">
       <h1>JS + React: Calculator</h1>
       <main class="calculator">
-        <output class="screen"></output>
+        <output class="screen" id="display">12</output>
         <div class="buttons container">
-            <section class="numbers">
-                <button class="num 1">1</button>
-                <button class="num 2">2</button>
-                <button class="num 3">3</button>
-                <button class="num 4">4</button>
-                <button class="num 5">5</button>
-                <button class="num 6">6</button>
-                <button class="num 7">7</button>
-                <button class="num 8">8</button>
-                <button class="num 9">9</button>
-            </section>
-            <section class="operations">
-                <button class="op add">+</button>
-                <button class="op sub">-</button>
-                <button class="op mult">*</button>
-                <button class="op div">/</button>
-                <button class="op eq">=</button>
-            </section>
-
+                <button class="num 0" id="zero">0</button>
+                <button class="num 1" id="one">1</button>
+                <button class="num 2" id="two">2</button>
+                <button class="num 3" id="three">3</button>
+                <button class="num 4" id="four">4</button>
+                <button class="num 5" id="five">5</button>
+                <button class="num 6" id="six">6</button>
+                <button class="num 7" id="seven">7</button>
+                <button class="num 8" id="eight">8</button>
+                <button class="num 9" id="nine">9</button>
+                <button class="op add" id="add">+</button>
+                <button class="op sub" id="subtract">-</button>
+                <button class="op mult" id="multiply">x</button>
+                <button class="op div" id="divide">/</button>
+                <button id="equals" class="op eq">=</button>
+                <button id="decimal" class="deci">.</button>
+                <button id="clear" class="eraser" onClick="eraser()">CLEAR</button>
         </div>
     </main>
     </div>

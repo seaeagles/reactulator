@@ -75,6 +75,12 @@ div.container {
 .eq {
   grid-row: 5 / span 2;
 }
+.deci {
+  grid-row: 7 / span 2;
+}
+.eraser {
+  grid-row: 7 / span 3;
+}
 
 h1 {
   font-size: 3.2em;
