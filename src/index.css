@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nova Mono', 'sans-serif';
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,23 +14,31 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Orbitron:wght@400;600&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  background: linear-gradient(#e66465, #C8BDFF);
+  /* #C8BDFF; */
   margin: 0;
   padding: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Nova Mono', 'sans-serif';
 }
 
+button {
+  font-family: 'Nova Mono', 'sans-serif';
+}
 main.calculator {
   width: 320px;
   border: 1px solid black;
-  border-radius: 4px;
+  border-radius: 10%;
   padding: 1rem;
   margin: 5rem auto;
-  background-color: silver;
+  background-color: #FFBDD3;
   box-shadow: 5px -5px 20px gray;
 }
 
