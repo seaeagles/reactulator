@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Orbitron:wght@400;600&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
 :root {
   font-family: 'Nova Mono', 'sans-serif';
   line-height: 1.5;
@@ -14,9 +16,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Orbitron:wght@400;600&family=Roboto:ital,wght@0,300;1,400&display=swap');
-
-
 * {
   box-sizing: border-box;
 }
@@ -31,6 +30,7 @@ body {
 
 button {
   font-family: 'Nova Mono', 'sans-serif';
+  font-size: 1rem;
 }
 main.calculator {
   width: 320px;
