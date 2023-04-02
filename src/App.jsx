@@ -1,6 +1,4 @@
 import { useState } from 'react'
-
-
 import './App.css'
 
 function App() {
@@ -8,8 +6,6 @@ function App() {
   const [operator, setOperator] = useState(null);
   const [prevInput, setPrevInput] = useState(null);
   const [hasDecimal, setHasDecimal] = useState(false);
-
-
 
   function handleClear() {
     setInput("0");
@@ -32,12 +28,11 @@ function App() {
     }
   }
 
-  function handleOperatorClick(operator) {
+  const handleOperatorClick = (operator) => {
     setHasDecimal(false);
     if (prevInput === null) {
       setPrevInput(input);
     } else if (operator && prevInput && input) {
-      // perform the previous operation and update the display
       const currentValue = parseFloat(input);
       let result;
       if (operator === "+") {
@@ -54,17 +49,15 @@ function App() {
     }
     setOperator(operator);
     setInput("0");
-  }
+  };
 
   function handleEqualsClick() {
-    if (prevInput === null) {
+    if (prevInput === null || operator === null) {
       return;
     }
     const currentValue = parseFloat(input);
     let result;
-    if (prevInput === null) {
-      return;
-    } else if (operator === "+") {
+      if (operator === "+") {
       result = parseFloat(prevInput) + currentValue;
     } else if (operator === "-") {
       result = parseFloat(prevInput) - currentValue;
